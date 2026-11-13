@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.vscode/
+__pycache__/
+
+bin/validator-cli.jar
+out
+public/config

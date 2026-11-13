@@ -1,0 +1,35 @@
+{
+  "name": "gpu-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Outils de test pour le Géoportail de l'Urbanisme : générateur de faux documents CNIG et allègement d'archives ZIP.",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "postinstall": "sh bin/install-validator.sh",
+    "predev": "node scripts/copy-config.mjs",
+    "prebuild": "node scripts/copy-config.mjs",
+    "generate": "tsx scripts/generate.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "jszip": "3.10.1",
+    "pdf-lib": "1.17.1",
+    "polygon-clipping": "0.15.7",
+    "randexp": "0.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "prettier": "^3.10.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "validator-config-gpu": "github:IGNF/validator-config-gpu#v8.1.0",
+    "vite": "^6.0.0",
+    "vitest": "^5.1.0"
+  }
+}

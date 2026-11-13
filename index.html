@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPU Tools</title>
+    <link rel="stylesheet" href="/src/app.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar-inner">
+        <h1>GPU Tools</h1>
+        <nav aria-label="Outils">
+          <a href="#/generator" data-tool="generator">Générateur</a>
+          <a href="#/shrink" data-tool="shrink">Allègement</a>
+          <a href="#/fix" data-tool="fix">Correcteur</a>
+        </nav>
+      </div>
+    </header>
+    <main id="view"></main>
+    <footer>
+      Outils de test pour le Géoportail de l’Urbanisme. Tout s’exécute dans votre navigateur ; les
+      documents générés sont factices et ne doivent pas être publiés.
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
